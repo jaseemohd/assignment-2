@@ -1,0 +1,76 @@
+Part 1
+
+If a = 2 and we perform a += 3, what will be the value of a?
+ 5
+
+
+
+2. What is the result of `print(False or True)`?
+ True
+
+
+3. What is the output of `print(not True)`?
+ False
+
+
+
+4. If `x = 1` and `y = 2`, what will `print(x & y)` return?
+ 0
+
+5. If `x = 1` and `y = 2`, what will `print(x | y)` return?
+ 3
+
+
+6. What will `print('a' in 'apple')` return?
+ True
+
+
+7. What happens if the condition in an if...else statement is False?
+
+ Else block is executed
+
+
+
+8. A while loop continues executing as long as:
+
+ The condition evaluates to True
+
+
+
+9. What does `range(5)` produce?
+
+ 0 to 4
+
+
+
+10. Which of the following generates numbers from 10 to 1?
+
+ `range(10,0,-1)`
+
+
+11. What causes a while loop to become an infinite loop?
+
+ Condition always evaluates to True and no update to exit the condition
+
+
+
+12. What is the function of the `break` statement?
+
+ Exits the loop
+
+
+
+13. Where is `pass` statement commonly used?
+ As a placeholder in empty block
+
+
+
+14. Which operator is used to repeat a string in Python?
+ *
+
+
+
+15. How can you check if a substring exists within a string in Python?
+
+ `find()` method
+
