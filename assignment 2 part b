@@ -1,0 +1,62 @@
+Python Assignment 2 - Part 2
+
+Q16. Which of the following methods checks if a string contains only numbers 0-9?
+
+Answer: d. isdigit()
+
+Q17. Which code creates an empty list?
+
+Answer: d. []
+
+Q18. What does the slice marks[:3] return?
+marks = [78, 87, 66, 98, 56, 81, 91]
+
+Answer: d. [78, 87, 66]
+
+Q19. How can you change the second element of a list x to 8?
+
+Answer: b. x[1] = 8
+
+Q20. Which statement deletes the first element of a list x?
+
+Answer: c. x.pop(0)
+
+Q21. Which function finds the largest element in list x?
+
+Answer: c. max(x)
+
+Q22. If b = [10,20,[80,90]], how do you access 90?
+
+Answer: c. b[-1][-1]
+
+Q23. If dict1 = {'name': 'Chandra', 'id': 200}, how do you access the value 200?
+
+Answer: d. dict1.get('id')
+
+Q24. Which statement correctly adds a new key 'Dept' with value 'Finance' to dictionary dict1?
+
+Answer: c. dict1.update({'Dept': 'Finance'})
+
+Q25. What happens if a duplicate key is added to a dictionary?
+
+Answer: d. Old value gets replaced with new value
+
+Q26. If d = {'a': 1} then what does d.get('b', 0) return?
+
+Answer: d. 0
+
+Q27. What does the items() method return?
+
+Answer: c. Key-value pairs as tuples in dict_items
+
+Q28. If for k in d: is used on a dictionary d, what does k represent?
+
+Answer: a. Keys
+
+Q29. Which of the following statements about Python sets is TRUE?
+
+Answer: d. Unordered with no duplicates
+
+Q30. What does the difference A - B return for two sets A and B?
+
+Answer: b. Elements in A, but not in B
