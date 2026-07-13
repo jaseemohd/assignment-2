@@ -1,0 +1,119 @@
+Python Assignment 2 - Part 4
+
+Q39. Write a Python program that takes an integer as input and counts down from that number to 0. Use a while loop and if-else statements to print a message at 0 (e.g., "Blast!").
+
+Answer:
+
+num = int(input("Enter a number: "))
+
+while num >= 0:
+    if num == 0:
+        print("Blast!")
+    else:
+        print(num)
+    num -= 1
+
+
+Q40. Write a Python program that continuously takes a student's marks (0-100) as input and prints the grade using if-elif-else. Ask the user if they want to continue.
+
+Answer:
+
+print("Welcome to the grade checker program!")
+
+while True:
+    marks = float(input("Enter your marks (0-100): "))
+
+    if marks >= 90:
+        print("Your grade is A+")
+    elif marks >= 80:
+        print("Your grade is A")
+    elif marks >= 70:
+        print("Your grade is B")
+    elif marks >= 60:
+        print("Your grade is C")
+    elif marks >= 50:
+        print("Your grade is D")
+    else:
+        print("Your grade is Fail")
+
+    choice = input("Do you want to check another grade? (yes/no): ").lower()
+
+    if choice == "no":
+        print("Thank you")
+        break
+
+
+Q41. You are given a number a and print:
+If divisible by 3 -> Fizz
+If divisible by 5 -> Buzz
+If divisible by both -> FizzBuzz
+Otherwise print the number.
+
+Answer:
+
+a = int(input("Enter a number: "))
+
+if a % 3 == 0 and a % 5 == 0:
+    print("FizzBuzz")
+elif a % 3 == 0:
+    print("Fizz")
+elif a % 5 == 0:
+    print("Buzz")
+else:
+    print(a)
+
+
+Q42. WAP to create a password authentication system. Store a password in a variable. Allow the user 3 attempts.
+
+Answer:
+
+password = "python123"
+
+attempts = 3
+
+while attempts > 0:
+    user = input("Enter password: ")
+
+    if user == password:
+        print("Access granted")
+        break
+    else:
+        attempts -= 1
+        print("Wrong password")
+
+if attempts == 0:
+    print("Access denied")
+
+
+Q43. Write a Python program to create a Simple Coin Toss Game.
+
+Answer:
+
+import random
+
+print("Welcome to the Simple Coin Toss Game!")
+
+while True:
+
+    while True:
+        guess = input("Guess heads or tails: ").lower()
+
+        if guess == "heads" or guess == "tails":
+            break
+        else:
+            print("Invalid input. Enter heads or tails.")
+
+    toss = random.choice(["heads", "tails"])
+
+    print("Coin shows:", toss)
+
+    if guess == toss:
+        print("You guessed it right!")
+    else:
+        print("Wrong guess!")
+
+    play = input("Do you want to play again? (yes/no): ").lower()
+
+    if play == "no":
+        print("Thanks for playing!")
+        break
